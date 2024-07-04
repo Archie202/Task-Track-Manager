@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Align items to opposite ends */
+    align-items: center;
+    padding: 10px;
+}
+
+header button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header button:hover {
+    opacity: 0.8;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.auth-form input,
+.auth-form textarea,
+.auth-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-form button:hover {
+    opacity: 0.8;
+}
+
+#task-manager {
+    padding: 20px;
+}
+
+#add-task, #task-list, #analytics-section {
+    margin: 20px 0;
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#task-form input,
+#task-form textarea,
+#task-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#task-form button {
+    padding: 10px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#task-form button:hover {
+    opacity: 0.8;
+}
+
+#search-bar, #filter {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: orange;
+}
+
+.actions button i {
+    font-size: 1.2em;
+}
+
+.dark-mode th {
+    background-color: #000000;
+}
+
+.dark-mode th, .dark-mode td {
+    border-color: #555;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #000000;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: #bbb;
+}
+
+
+
+.dark-mode header button {
+    background-color: #FF4500;
+}
+
+.dark-mode header button:hover {
+    background-color: #FF4500;
+}
+
+.dark-mode .auth-form {
+    background-color: #000000;
+    border-color: #555;
+}
+
+.dark-mode .auth-form input {
+    background-color: #000000;
+    border-color: #555;
+}
+
+.dark-mode .auth-form button {
+    background-color: #FF4500;
+}

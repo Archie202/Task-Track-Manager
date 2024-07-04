@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="auth-container">
+        <form id="login-form" class="auth-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="signup-form" class="auth-form">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-username" placeholder="Username" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <div id="task-manager" style="display: none;">
+        <header>
+            <button id="logout">Logout</button>
+            <button id="toggle-mode">Toggle Dark Mode</button>
+        </header>
+
+        <section id="add-task">
+            <h2>Add Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required>
+                <textarea id="task-desc" placeholder="Description"></textarea>
+                <input type="datetime-local" id="start-time" required>
+                <input type="datetime-local" id="end-time" required>
+                <select id="priority" required>
+                    <option value="" disabled selected>Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section id="task-list">
+            <h2>Task List</h2>
+            <input type="text" id="search-bar" placeholder="Search tasks...">
+            <select id="filter">
+                <option value="">Filter by priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tasks-table-body">
+                    <!-- Task rows will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="analytics-section">
+            <h2>Task Analytics</h2>
+            <select id="task-selector">
+                <option value="">Select a task</option>
+                <!-- Task options will be inserted here -->
+            </select>
+            <div id="analytics">
+                <!-- Analytics chart will be inserted here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
